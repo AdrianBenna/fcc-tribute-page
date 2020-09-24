@@ -4,26 +4,32 @@
     <!-- metadata elements: markup info about the page, link, meta, title, style, etc.. -->
     <style>
         #main {
-          background: #FFAAAA;
+          background: #EDCFCF;
+          border-radius: 20px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
-        h1 {
+        #title {
             color: #801515;
+            text-align: center;
         }
 
         p {
-          align-self: center;
+          text-align: center;
         }
 
-        .smaller-image {
-          width: 500px;
-          height: 500px;
+        #image {
+          max-width: 100%;
+          height: auto;
         }
 
         #img-div {
-          background: #d46a6a;
+          background: #c19898;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
 
-
+        #tribute-info {
+          text-align: center;
+        }
     </style>
   </head>
 
@@ -34,17 +40,18 @@
         <p>"Let's Go Places"</p>
         
         <figure id="img-div">
-          <img class="smaller-image" 
+          <img id= "image"  
           src="https://live.staticflickr.com/4508/37340258310_a8837e2a17_6k.jpg" 
-          alt="Justin&#x27;s 4Runner">
+          alt="A third generation Toyota 4Runner sitting at the top of a hill with the sunset in the background">
 
-          <figcaption>
+          <figcaption id="img-caption">
             The Toyota 4Runner is a compact, later mid-size sport utility vehicle 
             produced by the Japanese manufacturer Toyota and sold throughout 
             the world from 1984 to present.
           </figcaption>
         </figure>
 
+          <section id="tribute-info">
           <h2>
             Here is a time line of Toyota Motor Corporation's History
           </h2>
@@ -80,8 +87,8 @@
               -- Sakichi Toyoda</em>
           </p>
 
-          <h2>Read more about Toyota on their <a href="https://en.wikipedia.org/wiki/Toyota" target="_blank">Wikipedia page</a>.</h2>
-
+          <h2>Read more about Toyota on their <a id="tribute-link" href="https://en.wikipedia.org/wiki/Toyota" target="_blank">Wikipedia page</a>.</h2>
+          </section>
     </main>
     
 
