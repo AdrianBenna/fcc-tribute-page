@@ -7,19 +7,34 @@
           background: #EDCFCF;
           border-radius: 20px;
           box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+          font-family: arial;
         }
         #title {
             color: #801515;
             text-align: center;
+            font-family: "arial black";
         }
 
-        p {
+        #quote {
+          max-width: 700px;
+          margin: 50px auto 50px auto;
+          line-height: 1.5;
           text-align: center;
         }
 
+        #img-div {
+          text-align: center; 
+          padding: 50px 50px 50px 50px;
+        }
+
         #image {
+          display: block;
           max-width: 100%;
           height: auto;
+          margin: auto auto auto auto;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+          
         }
 
         #img-div {
@@ -28,7 +43,24 @@
         }
 
         #tribute-info {
+          max-width: 700px;
+          margin: 50px auto 50px auto;
+        }
+
+        #img-caption {
           text-align: center;
+          margin: 25px;
+        }
+
+        ul {
+          max-width: 700px;
+          margin: 50px auto 50px auto;
+          line-height: 1.5;
+          text-align: left;
+        }
+
+        li {
+          margin: 20px;
         }
     </style>
   </head>
@@ -36,8 +68,11 @@
   <body>
     <!-- page contents: what displays for a user -->
     <main id="main"> 
-        <h1 id="title">Toyota</h1>
-        <p>"Let's Go Places"</p>
+
+      <div id="title">
+        <h1>Toyota</h1>
+        <p style="color: black;">"Let's Go Places"</p>
+      </div>
         
         <figure id="img-div">
           <img id= "image"  
@@ -52,38 +87,38 @@
         </figure>
 
           <section id="tribute-info">
-          <h2>
+          <h2 id="tribute-info-title">
             Here is a time line of Toyota Motor Corporation's History
           </h2>
 
           <ul>
             <li><strong>1920s</strong> - In 1924, Sakichi Toyoda invented the Toyoda Model G Automatic Loom.</li>
-            <br>
+            
             <li><strong>1940s</strong> - From September 1947, Toyota's small-sized vehicles were sold under the name "Toyopet" (トヨペット).</li>
-            <br>
+            
             <li><strong>1960s</strong> - By the early 1960s, the US had begun placing stiff import tariffs on certain vehicles.</li>
-            <br>
-            <li><strong>1980s</strong> - Toyota received its first Japanese Quality Control Award at the start of the 1980s and began <br>
+            
+            <li><strong>1980s</strong> - Toyota received its first Japanese Quality Control Award at the start of the 1980s and began 
                participating in a wide variety of motorsports.</li>
-            <br>
-            <li><strong>1990s</strong> - In the 1990s, Toyota began to branch out from producing mostly compact cars by adding many <br>
-               larger and more luxurious vehicles to its lineup, including a full-sized pickup, the T100 <br>
+            
+            <li><strong>1990s</strong> - In the 1990s, Toyota began to branch out from producing mostly compact cars by adding many 
+               larger and more luxurious vehicles to its lineup, including a full-sized pickup, the T100 
                 (and later the Tundra), several lines of SUVs, a sport version of the Camry, known as the Camry Solara.</li>
-            <br>
-            <li><strong>2000s</strong> - In 2001, Toyota's Toyo Trust and Banking merged with two other banks to form UFJ Bank, which <br>
-               was accused of corruption by Japan's government for making bad loans to alleged Yakuza crime <br>
+            
+            <li><strong>2000s</strong> - In 2001, Toyota's Toyo Trust and Banking merged with two other banks to form UFJ Bank, which 
+               was accused of corruption by Japan's government for making bad loans to alleged Yakuza crime 
                 syndicates with executives accused of blocking Financial Service Agency inspections.</li>
-            <br>
+            
             <li><strong>2010s</strong> - In 2011, Toyota, along with large parts of the Japanese automotive industry, suffered from a series of natural disasters. </li>
-            <br>
-            <li><strong>2014s</strong> - The automaker narrowly topped global sales for the first half of 2014, selling 5.1 million <br>
-               vehicles in the six months ending June 30, 2014, an increase of 3.8% on the same period the <br>
+            
+            <li><strong>2014s</strong> - The automaker narrowly topped global sales for the first half of 2014, selling 5.1 million 
+               vehicles in the six months ending June 30, 2014, an increase of 3.8% on the same period the 
                 previous year. Volkswagen AG, which recorded sales of 5.07 million vehicles, was close behind.[48]</li>
-            <br>
+            
           </ul>
 
-          <p>
-            <em>“Workers are treasure of the factory. They are important to me.” <br>
+          <p id="quote">
+            <em>“Workers are treasure of the factory. They are important to me.” 
               -- Sakichi Toyoda</em>
           </p>
 
